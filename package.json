@@ -1,0 +1,16 @@
+{
+  "name": "mission-schnittstelle",
+  "version": "1.0.0",
+  "description": "Mission Schnittstelle – ein Lernspiel, das absoluten Einsteigern APIs, HTTP, REST, SOAP, GraphQL und die Browser-Entwicklerwerkzeuge beibringt.",
+  "type": "module",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js",
+    "dev": "node --watch server.js",
+    "test": "node --test"
+  },
+  "engines": {
+    "node": ">=18.17"
+  },
+  "license": "MIT"
+}

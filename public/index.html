@@ -1,0 +1,42 @@
+<!doctype html>
+<html lang="de">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Mission Schnittstelle – Das API-Lernspiel</title>
+    <meta
+      name="description"
+      content="Lerne Schritt für Schritt, was Schnittstellen (APIs) sind: HTTP, REST, SOAP, GraphQL, JSON, XML und die Entwicklerwerkzeuge des Browsers – mit echten Anfragen."
+    />
+    <meta name="color-scheme" content="light dark" />
+    <link rel="icon" href="/favicon.svg" type="image/svg+xml" />
+    <link rel="stylesheet" href="/css/style.css" />
+    <script type="module" src="/js/main.js"></script>
+  </head>
+  <body>
+    <a class="sprunglink" href="#inhalt">Zum Inhalt springen</a>
+    <header class="kopf">
+      <button class="menue-knopf" id="menue-knopf" aria-label="Kapitelmenü öffnen" aria-expanded="false" aria-controls="navigation">☰</button>
+      <a href="#/" class="logo"><span class="logo-icon" aria-hidden="true">🛰️</span><span>Mission Schnittstelle</span></a>
+      <div class="kopf-status" id="kopf-status" aria-live="polite"></div>
+    </header>
+
+    <div class="layout">
+      <nav class="seitenleiste" id="navigation" aria-label="Kapitel"></nav>
+      <main id="inhalt" class="inhalt" tabindex="-1">
+        <noscript>
+          <p class="box box-achtung">Dieses Lernspiel braucht JavaScript. Bitte aktiviere JavaScript in deinem Browser.</p>
+        </noscript>
+      </main>
+    </div>
+
+    <button id="werkstatt-knopf" class="werkstatt-knopf" aria-controls="werkstatt" aria-expanded="false">
+      <span aria-hidden="true">🧰</span> Werkstatt
+    </button>
+    <aside id="werkstatt" class="werkstatt" aria-label="Anfrage-Werkstatt" hidden></aside>
+
+    <div id="ticker" class="ticker" aria-live="polite"></div>
+    <div id="toasts" class="toasts" aria-live="polite"></div>
+    <div id="tooltip" class="tooltip" role="tooltip" hidden></div>
+  </body>
+</html>
